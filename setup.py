@@ -1,8 +1,7 @@
 import obd
-
 OBD_LOCATION = '/dev/pts/1'
 
-DATABASE_CONFIG = {'url': '192.168.2.6',
+DATABASE_CONFIG = {'url': '192.168.2.61',
                    'port': 8086,
                    'user': 'root',
                    'password': 'root',

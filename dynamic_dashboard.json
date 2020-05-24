@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 2,
+  "id": 1,
   "links": [],
   "panels": [
     {
@@ -37,14 +37,13 @@
       "hideEmpty": false,
       "hideZero": false,
       "id": 18,
-      "initialZoom": "10",
+      "initialZoom": "15",
       "locationData": "table",
       "mapCenter": "Last GeoHash",
-      "mapCenterLatitude": "39.500944000000366",
-      "mapCenterLongitude": "-0.3460830000000012",
+      "mapCenterLatitude": "39.4697",
+      "mapCenterLongitude": "-0.3774",
       "maxDataPoints": 1,
       "mouseWheelZoom": true,
-      "options": {},
       "showLegend": false,
       "stickyLabels": false,
       "tableQueryOptions": {
@@ -85,8 +84,8 @@
           "measurement": "gps",
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "SELECT mean(\"value\") AS \"metric\" FROM \"gps\" WHERE $timeFilter GROUP BY time($__interval), \"latitude\", \"longitude\" fill(linear)",
-          "rawQuery": false,
+          "query": "SELECT mean(\"value\") AS \"metric\" FROM \"gps\" WHERE $timeFilter GROUP BY time($__interval), \"latitude\", \"longitude\" fill(none)",
+          "rawQuery": true,
           "refId": "A",
           "resultFormat": "table",
           "select": [
@@ -263,11 +262,10 @@
       "initialZoom": "15",
       "locationData": "table",
       "mapCenter": "Last GeoHash",
-      "mapCenterLatitude": "39.500944000000366",
-      "mapCenterLongitude": "-0.3460830000000012",
+      "mapCenterLatitude": "39.4697",
+      "mapCenterLongitude": "-0.3774",
       "maxDataPoints": 1,
       "mouseWheelZoom": true,
-      "options": {},
       "showLegend": false,
       "stickyLabels": false,
       "tableQueryOptions": {
@@ -474,7 +472,6 @@
       "hideTimeOverride": false,
       "id": 14,
       "links": [],
-      "options": {},
       "pageSize": null,
       "showHeader": true,
       "sort": {
@@ -496,7 +493,7 @@
           "link": true,
           "linkTargetBlank": true,
           "linkTooltip": "",
-          "linkUrl": "http://192.168.2.6:3000/d/3GNwOmmRk/cruze?orgId=1&from=${__cell_1:raw}&to=${__cell_0:raw}",
+          "linkUrl": "http://192.168.2.61:3000/d/3GNwOmmRk/cruze?orgId=1&from=${__cell_1:raw}&to=${__cell_0:raw}",
           "pattern": "started_at",
           "thresholds": [],
           "type": "date",
@@ -531,7 +528,7 @@
           "dateFormat": "YYYY-MM-DD HH:mm:ss",
           "decimals": 2,
           "link": true,
-          "linkUrl": "http://192.168.2.6:3000/d/3GNwOmmRk/cruze?orgId=1&from=${__cell_1:raw}&to=${__cell_0:raw}",
+          "linkUrl": "http://192.168.2.61:3000/d/3GNwOmmRk/cruze?orgId=1&from=${__cell_1:raw}&to=${__cell_0:raw}",
           "mappingType": 1,
           "pattern": "Ended_at",
           "sanitize": false,
@@ -743,7 +740,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "6.6.0",
+      "pluginVersion": "6.7.3",
       "targets": [
         {
           "groupBy": [
@@ -834,7 +831,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "6.6.0",
+      "pluginVersion": "6.7.3",
       "targets": [
         {
           "groupBy": [
@@ -919,7 +916,7 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "6.6.0",
+      "pluginVersion": "6.7.3",
       "targets": [
         {
           "groupBy": [
@@ -985,5 +982,8 @@
   "timezone": "",
   "title": "Cruze",
   "uid": "3GNwOmmRk",
-  "version": 55
+  "variables": {
+    "list": []
+  },
+  "version": 5
 }
